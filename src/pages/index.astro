@@ -1,16 +1,16 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import Navigation from '../components/Navigation.astro';
-import '../styles/global.css';
-import Footer from '../components/Footer.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Navigation from "../components/Navigation.astro";
+import "../styles/global.css";
+import Footer from "../components/Footer.astro";
 ---
 
-<Layout title="欢迎来到Astro.">
+<Layout title="Createciecles Studio 西北民族大学">
 	<main>
 		<nav>
-            <Navigation />
-        </nav>
+			<Navigation />
+		</nav>
 		<svg
 			class="astro-a"
 			width="495"
@@ -39,40 +39,43 @@ import Footer from '../components/Footer.astro';
 				</linearGradient>
 			</defs>
 		</svg>
-		<h1>欢迎来到 <span class="text-gradient">Astro</span></h1>
-		<h2>welcome to Astro！</h2>
-		<h3>易烊千玺女朋友--- <span class="text-gradient"> 杨睿曦 </span>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-		<footer>
-			<Footer />
-		</footer>
+		<h1>
+			 <span class="text-gradient"> 遇见❤宁夏</span>
+		</h1>
+		<h2>Welcome to NING XIA</h2>
+		<h3>设计人 <span class="text-gradient"> 杨睿曦</span></h3>
 	</main>
 </Layout>
+<p class="instructions">
+	这里既有古老的黄河文明，又有雄浑的大漠风光。既有神秘的西夏古韵，又有浓郁的地域风情。既有记载历史的古长城，又有孕育希望的新天府……
+今天，就请大家一起跟随我，穿越时空之门，走进塞上江南，领略神奇宁夏。
+	<strong></strong> 
+</p>
+<ul role="list" class="link-card-grid">
+	<Card
+	    href="/天下黄河富宁夏/"
+		title="天下黄河富宁夏 "
+		body="湖泊阡陌美如画❤️"
+	/>
+	<Card
+	    href="/金沙秀水浑然成/"
+		title="金沙秀水浑然成"
+		body="宁夏归来不看沙❤️"
+	/>
+	<Card
+	    href="/贺兰岩峦叠万重/"
+		title="贺兰岩峦叠万重"
+		body="六盘烟岚美如幻❤️"
+	/>
+	<Card
+	    href="流星透疏木"
+		title="流星透疏木"
+		body="走月逆行云❤️"
+	/>
+</ul>
+<footer>
+	<Footer />
+</footer>
 
 <style>
 	main {
@@ -80,13 +83,13 @@ import Footer from '../components/Footer.astro';
 		padding: 1rem;
 		width: 800px;
 		max-width: calc(100% - 2rem);
-		color: rgb(175, 239, 239), 255, 255);
+		color: rgb(100, 184, 245);
 		font-size: 20px;
 		line-height: 1.6;
 	}
 	nav a {
-        color: #085d91;
-    }
+		color: #f1b4b4;
+	}
 	.astro-a {
 		position: absolute;
 		top: -32px;
@@ -105,8 +108,9 @@ import Footer from '../components/Footer.astro';
 	}
 	h2 {
 		text-align: center;
+		color:   #cd6969;
 	}
-	h3{
+	h3 {
 		text-align: center;
 	}
 	.text-gradient {
@@ -119,7 +123,10 @@ import Footer from '../components/Footer.astro';
 	.instructions {
 		margin-bottom: 2rem;
 		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
+		background: linear-gradient(
+			rgba(var(--accent-dark), 66%),
+			rgba(var(--accent-dark), 33%)
+		);
 		padding: 1.5rem;
 		border-radius: 8px;
 	}

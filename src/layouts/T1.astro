@@ -1,0 +1,32 @@
+---
+const { frontmatter, title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{frontmatter.title}</title>
+    </head>
+    <body>
+        <head></head>
+        <main>
+            <h1>{frontmatter.title}</h1>
+            <slot />
+        </main>
+        <footer>
+            <hr />
+            <p><span>悟已往之不谏，知来者之可追</span> <span>2024</span></p>
+        </footer>
+    </body>
+</html>
+
+<style>
+    h1 {
+        font-family: "方正苏新诗柳楷简体";
+    }
+    h2 {
+        font-family: "方正瘦金书简体";
+    }
+</style>
